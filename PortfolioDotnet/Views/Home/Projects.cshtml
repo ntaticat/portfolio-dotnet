@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "Proyectos - Rafael Estrada";
+    Layout = "~/Views/Home/_HomeLayout.cshtml";
+}
+
+<div class="row mx-0 bg-light bg-opacity-75 text-dark rounded mt-3">
+    <div class="col-12 pt-3">
+        <p class="fs-5 mb-0">Projects</p>
+    </div>
+    <div class="col-12 p-0">
+        <div class="row mx-0">
+            @foreach (var number in new List<int> { 1,1,1,1,1,1,1,1,1,1,1 })
+            {
+                <div class="col-12 p-2">
+                    <div class="card bg-dark bg-opacity-75 text-light">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre del proyecto</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <p>
+                                        <span class="badge rounded-pill bg-secondary">ASP .NET</span>
+                                        <span class="badge rounded-pill bg-secondary">Angular</span>
+                                        <span class="badge rounded-pill bg-secondary">MySQL</span>
+                                        <span class="badge rounded-pill bg-secondary">Web App</span>
+                                    </p>
+                                    <a href="https://github.com/ntaticat" target="_blank"
+                                        class="btn btn-danger card-link">Visitar</a>
+                                    <a href="https://github.com/ntaticat" target="_blank"
+                                        class="btn btn-danger card-link">Repositorio</a>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <img src="~/img/gustavo.jpg"
+                                    class="img-fluid w-100 h-100 object-fit-cover" alt="Project Screenshot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+@model List<ProjectViewModel>
+
+@{
+    ViewData["Title"] = "Projects Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    @if (true)
+    {
+        <button class="btn btn-dark">Entrar</button>
+    }
+</div>
+
+
+<div>
+    @foreach (var project in Model)
+    {
+        <p>@project.ProjectName</p>
+    }
+</div>
