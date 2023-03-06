@@ -28,3 +28,7 @@
     height: 100vh;
     overflow: auto;
 }
+
+.home-container {
+    min-height: 100vh;
+}

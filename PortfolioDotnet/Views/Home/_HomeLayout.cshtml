@@ -2,12 +2,17 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container bg-black bg-gradient text-light bg-opacity-75 shadow">
+<div class="home-container container px-0 bg-black bg-gradient text-light bg-opacity-75 shadow">
     <div class="row mx-0 p-0">
         @* Main *@
-        <div class="col-8 p-3">
+        <div class="col-12 col-md-8 p-3 pe-lg-0">
             @* Imagen y Titulo *@
             <partial name="_HeaderCardPartialView" />
+            @* Nav *@
+            <div class="row mx-0 pt-3 d-flex d-md-none">
+                <partial name="_NavigationCardPartialView" />
+            </div>
+
             @* Contenido *@
             @RenderBody()
         </div>
