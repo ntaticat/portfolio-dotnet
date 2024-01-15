@@ -13,3 +13,5 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /PortfolioDotnet
 COPY --from=build-env /PortfolioDotnet/out .
 ENTRYPOINT ["dotnet", "PortfolioDotnet.dll"]
+
+EXPOSE 80
